@@ -33,6 +33,7 @@ Doanh nghiệp **sản xuất** (may mặc, cơ khí, điện tử, chế biến
 | **Đánh giá hiệu suất (KPI/OKR)** | Đợt đánh giá → tạo phiếu hàng loạt, KPI có trọng số (tự đánh giá + quản lý) → xếp loại; mục tiêu **OKR** + tiến độ. |
 | **Đào tạo (LMS) & ATLĐ (EHS)** | Khóa/lớp đào tạo → **tự cấp chứng chỉ** khi hoàn thành (kèm cảnh báo hết hạn); khám sức khỏe định kỳ; sự cố/tai nạn lao động. |
 | **Kho tri thức + Trợ lý AI** | Kho tài liệu nội bộ (nội quy, quy trình, chính sách) + **trợ lý AI hỏi‑đáp (RAG)** trên kho đó; nhân viên tra cứu qua cổng. |
+| **Tuyển dụng (ATS)** | Yêu cầu tuyển dụng + duyệt; **pipeline ứng viên** (kanban); chấm điểm phỏng vấn; **tạo nhân viên từ ứng viên trúng tuyển** (prefill hồ sơ VN). |
 
 ## 5. Mô hình mở & bảng giá
 - **Miễn phí tới 30 nhân viên đang hoạt động** — **đủ mọi tính năng**, **không giới hạn thời gian** (dùng thử bằng dữ liệu thật).
@@ -58,4 +59,4 @@ Xây trên **Odoo Community 19** (mã nguồn mở). Phần lõi LGPL‑3 (công
 
 ## EN summary (cho bsdinsight.com/en)
 **Sapiones — Open‑core HR & Payroll for Vietnamese manufacturers, built on Odoo.**
-Vietnam‑law‑compliant payroll (social insurance + PIT), shift & overtime attendance, biometric devices, piece‑rate pay, e‑declarations, employee self‑service portal, KPI/OKR appraisals, training & EHS, and a knowledge base with an AI assistant. **Free for up to 30 employees**, no time limit; on‑premise friendly. A BSD product on Odoo Community 19.
+Vietnam‑law‑compliant payroll (social insurance + PIT), shift & overtime attendance, biometric devices, piece‑rate pay, e‑declarations, employee self‑service portal, recruitment (ATS), KPI/OKR appraisals, training & EHS, and a knowledge base with an AI assistant. **Free for up to 30 employees**, no time limit; on‑premise friendly. A BSD product on Odoo Community 19.
