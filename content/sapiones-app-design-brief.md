@@ -215,9 +215,24 @@ App (sau đăng nhập):
 ### S7. Kho tri thức *(v1 tùy chọn)*
 - Tìm kiếm + danh mục → đọc bài viết (nội quy, quy trình, chính sách). (Trợ lý AI hỏi-đáp: để dành sau.)
 
-### S8. Cá nhân
-- Thông tin: Tên · Mã NV · Phòng ban · Chức vụ.
-- Cài đặt: **Đổi PIN** · **Ngôn ngữ** (VN/EN/KO/JA) · Bật/tắt thông báo · **Đổi công ty** · **Đăng xuất**.
+### S8. Cá nhân — Hồ sơ của tôi + Cài đặt
+> Mobile **không bê nguyên hồ sơ backend**. Chỉ hiện phần **liên quan tới nhân viên**, **xem là chính**; vài mục cho **tự cập nhật → HR duyệt** (như xin nghỉ); thông tin nhạy cảm **che bớt**. Tách rõ **Hồ sơ** vs **Cài đặt ứng dụng** (bản hiện tại đang trộn lẫn).
+
+**① Thẻ định danh** (đầu màn): Ảnh · Họ tên · Mã NV · Công ty · Phòng ban · Chức vụ · **Ngày vào làm · Loại hợp đồng · Thâm niên**.
+
+**② Hồ sơ của tôi** (mỗi nhóm là 1 dòng → mở xem chi tiết):
+- **Liên hệ** *(tự sửa → HR duyệt)*: SĐT, email, địa chỉ thường trú/tạm trú, **liên hệ khẩn cấp**.
+- **Giấy tờ & định danh** *(xem; che mặc định)*: CCCD/CMND (số·ngày·nơi cấp), MST cá nhân, số sổ BHXH. *(Người nước ngoài: hộ chiếu, giấy phép lao động, visa/thẻ tạm trú + **hạn** & cảnh báo.)* → hiện dạng `****1234`, chạm để xem (sau PIN/sinh trắc); **sửa phải qua HR**.
+- **Người phụ thuộc (giảm trừ gia cảnh)** *(tự thêm/sửa → HR duyệt)*: tên · quan hệ · MST · thời gian giảm trừ.
+- **Tài khoản ngân hàng (nhận lương)** *(sửa → HR duyệt + xác thực mạnh)*: số TK · ngân hàng · chi nhánh. ⚠️ Nhạy cảm (rủi ro gian lận) → che, đổi phải xác thực kỹ.
+- **Hợp đồng & lương** *(xem)*: loại HĐ · thời hạn · ngày ký; link sang Phiếu lương.
+- **Chứng chỉ & bằng cấp** *(xem)*: danh sách + **hạn** (cảnh báo sắp hết hạn).
+- **Trình độ / kỹ năng** *(xem — tùy chọn)*.
+
+**③ Cài đặt ứng dụng**: Xác nhận khi xem lương · Đổi PIN · **Vân tay/khuôn mặt** · Ngôn ngữ (VN/EN/KO/JA) · Thông báo · **Đổi công ty** · **Đăng xuất**.
+
+**Quy tắc sửa (bắt buộc):** mọi thay đổi hồ sơ là **đề xuất → HR duyệt**, có lưu vết — **không** sửa trực tiếp. Trường ảnh hưởng lương/thuế/BHXH (CCCD, MST, BHXH, người phụ thuộc, TK ngân hàng) **luôn phải duyệt**. Nút ✏️ chỉ mở các trường được phép tự cập nhật.
+**Adaptive:** ẩn nhóm không có dữ liệu (vd không phải người nước ngoài → ẩn giấy phép lao động).
 
 ### S9. Duyệt đơn — cho quản lý *(giai đoạn 2)*
 - Danh sách **đơn nghỉ chờ duyệt** của nhân viên thuộc quyền.
