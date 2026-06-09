@@ -72,7 +72,7 @@ Tận dụng nền Odoo Community 19; phân hệ thương mại OPL-1.
 ---
 
 # Sapiones 1.0 — Tháng 6/2026
-**Bản phát hành nền tảng (inaugural release).** Đánh dấu Sapiones từ ý tưởng → bộ HRM/HCM hoàn chỉnh cho doanh nghiệp sản xuất Việt Nam trên Odoo Community 19.
+**Bản phát hành nền tảng (inaugural release).** Đánh dấu Sapiones từ ý tưởng → bộ HRM/HCM hoàn chỉnh cho doanh nghiệp Việt Nam trên Odoo Community 19, với **phiên bản chuyên ngành Sản xuất** đầu tiên.
 
 ## ✨ Release Highlights
 - **9 phân hệ nối liền** — từ hồ sơ, chấm công, tính lương, kê khai đến cổng nhân viên, đánh giá, đào tạo và trợ lý AI.

@@ -6,13 +6,16 @@
 ---
 
 ## 1. Một câu (tagline)
-**Sapiones — Phần mềm Quản trị Nhân sự & Tiền lương cho doanh nghiệp sản xuất Việt Nam, đúng luật, trên nền Odoo.**
+**Sapiones — Phần mềm Quản trị Nhân sự cho doanh nghiệp Việt Nam, đúng luật, trên nền Odoo.**
 
 ## 2. Elevator pitch (ngắn)
-Sapiones là bộ giải pháp HRM/HCM mã nguồn mở dành cho **nhà máy & doanh nghiệp sản xuất Việt Nam**: tính lương đúng luật (BHXH, thuế TNCN), chấm công ca kíp & tăng ca, máy chấm công, lương sản phẩm, kê khai điện tử, cổng nhân viên, đánh giá KPI/OKR, đào tạo & an toàn lao động, kho tri thức + trợ lý AI. **Miễn phí tới 30 nhân viên** — dùng thử bằng chính dữ liệu của bạn, không giới hạn thời gian.
+Sapiones là nền tảng HRM/HCM mã nguồn mở cho **mọi doanh nghiệp Việt Nam**: tính lương đúng luật (BHXH, thuế TNCN), chấm công, kê khai điện tử, cổng nhân viên, tuyển dụng, đánh giá KPI/OKR, đào tạo, kho tri thức + trợ lý AI, báo cáo. Trên nền đó là các **phiên bản chuyên ngành** đi sâu từng lĩnh vực — **bắt đầu với Sản xuất** (ca kíp, máy chấm công, lương sản phẩm, ATLĐ). **Miễn phí tới 30 nhân viên**, không giới hạn thời gian.
+
+## 2b. Tầm nhìn
+Một **nền tảng HR dùng chung cho mọi doanh nghiệp**, đào sâu theo từng ngành bằng các **phiên bản chuyên ngành**: **Sản xuất** (đã có) → Ngân hàng, Bảo hiểm, Bán lẻ, Logistics… (phát triển dần).
 
 ## 3. Đối tượng
-Doanh nghiệp **sản xuất** (may mặc, cơ khí, điện tử, chế biến…) quy mô vài chục đến hàng nghìn lao động; phù hợp cả thương mại/dịch vụ. Triển khai **on‑premise** (chủ quyền dữ liệu, tích hợp máy chấm công LAN) hoặc cloud.
+**Mọi doanh nghiệp Việt Nam** (sản xuất, thương mại, dịch vụ…) quy mô vài chục đến hàng nghìn lao động. Phiên bản chuyên ngành đầu tiên — **Sản xuất** (may mặc, cơ khí, điện tử, chế biến) — đã rất sâu. Triển khai **on‑premise** (chủ quyền dữ liệu) hoặc cloud.
 
 ## 4. Bộ tính năng
 
@@ -43,7 +46,7 @@ Doanh nghiệp **sản xuất** (may mặc, cơ khí, điện tử, chế biến
 
 ## 6. Vì sao chọn Sapiones
 1. **Đúng luật Việt Nam** — BHXH, thuế TNCN, tăng ca, kê khai theo quy định mới nhất; cập nhật khi luật đổi.
-2. **Sinh ra cho sản xuất** — ca kíp, máy chấm công, lương sản phẩm, ATLĐ — đúng bài toán nhà máy.
+2. **Phiên bản chuyên ngành** — Sản xuất (ca kíp, máy chấm công, lương sản phẩm, ATLĐ) đã sâu; sẽ mở rộng Ngân hàng, Bảo hiểm, Bán lẻ…
 3. **All‑in‑one, nối liền** — chấm công → lương → kê khai → cổng NV → đánh giá → đào tạo → tri thức, một hệ thống.
 4. **On‑premise + mở** — chủ quyền dữ liệu, mã nguồn mở phần lõi, miễn phí tới 30 NV.
 5. **AI sẵn sàng** — trợ lý tri thức RAG, mở rộng khi cần.
@@ -58,5 +61,5 @@ Xây trên **Odoo Community 19** (mã nguồn mở). Phần lõi LGPL‑3 (công
 ---
 
 ## EN summary (cho bsdinsight.com/en)
-**Sapiones — Open‑core HR & Payroll for Vietnamese manufacturers, built on Odoo.**
-Vietnam‑law‑compliant payroll (social insurance + PIT), shift & overtime attendance, biometric devices, piece‑rate pay, e‑declarations, employee self‑service portal, recruitment (ATS), KPI/OKR appraisals, training & EHS, and a knowledge base with an AI assistant. **Free for up to 30 employees**, no time limit; on‑premise friendly. A BSD product on Odoo Community 19.
+**Sapiones — Open‑core HR for Vietnamese businesses, built on Odoo.**
+Vietnam‑law‑compliant payroll (social insurance + PIT), attendance, e‑declarations, employee self‑service portal, recruitment (ATS), KPI/OKR appraisals, training, a knowledge base with an AI assistant, and reports — for **any business**. On top, **industry editions** go deep per sector, **starting with Manufacturing** (shifts/overtime, biometric devices, piece‑rate pay, EHS). **Free for up to 30 employees**; on‑premise friendly. A BSD product on Odoo Community 19.

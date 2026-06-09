@@ -1,26 +1,26 @@
 # Sapiones App — Bản yêu cầu thiết kế giao diện (Design Brief)
 
-> Dành cho: **session Design** thiết kế giao diện **app di động cho công nhân**.
-> Sản phẩm: Sapiones — phần mềm Quản trị Nhân sự & Tiền lương cho doanh nghiệp **sản xuất** Việt Nam (by BSD, trên Odoo).
+> Dành cho: **session Design** thiết kế giao diện **app di động cho người lao động (nhân viên)**.
+> Sản phẩm: Sapiones — phần mềm Quản trị Nhân sự cho doanh nghiệp Việt Nam (by BSD, trên Odoo).
 > Cập nhật: 2026-06. Ngôn ngữ chính: **Tiếng Việt**.
 
 ---
 
 ## 1. Bối cảnh
-**Sapiones App** là app di động cho **công nhân/người lao động** của các nhà máy đang dùng Sapiones. Mục đích: để công nhân **tự xem phiếu lương, chấm công, xin nghỉ, nhận thông báo** ngay trên điện thoại — không cần lên văn phòng hỏi nhân sự.
+**Sapiones App** là app di động cho **người lao động (nhân viên)** của các doanh nghiệp đang dùng Sapiones. Mục đích: để nhân viên **tự xem phiếu lương, chấm công, xin nghỉ, nhận thông báo** ngay trên điện thoại — không cần lên văn phòng hỏi nhân sự.
 
-- Backend là **on-premise** (mỗi công ty 1 server riêng). App là **một app dùng chung cho mọi công ty** (multi-tenant): công nhân **quét QR** do HR cung cấp để app trỏ về server công ty mình.
+- Backend là **on-premise** (mỗi công ty 1 server riêng). App là **một app dùng chung cho mọi công ty** (multi-tenant): người lao động **quét QR** do HR cung cấp để app trỏ về server công ty mình.
 - Đây **không phải SaaS** — dữ liệu nằm ở server công ty. App chỉ là cửa sổ truy cập.
 - Sẽ build bằng **React Native + Expo** (iOS + Android), và/hoặc **PWA** từ cổng web sẵn có. Thiết kế cần **mobile-first**.
 
 ## 2. Người dùng mục tiêu (rất quan trọng)
-**Công nhân sản xuất Việt Nam** — đặc điểm cần thiết kế cho đúng:
+**Người lao động của doanh nghiệp Việt Nam** — từ công nhân nhà máy, nhân viên bán lẻ đến nhân viên văn phòng. Thiết kế cho **mẫu số chung dễ nhất** để ai cũng dùng được — đặc điểm cần lưu ý:
 - **Trình độ công nghệ phổ thông** (quen MoMo/ZaloPay/Zalo, không quen app văn phòng).
 - Độ tuổi đa dạng, có người lớn tuổi → **cần chữ to, tương phản cao**.
 - Dùng điện thoại tầm trung, **sóng có thể yếu** (trong xưởng, ở quê).
 - Dùng **một tay**, đôi khi vội/đứng máy → thao tác phải nhanh, ít bước.
 - Quan tâm nhất: **"Tháng này lĩnh bao nhiêu?"** → phiếu lương là trái tim của app.
-- (Tương lai: một số nhà máy FDI có công nhân/quản lý **nước ngoài** → để dành đa ngôn ngữ.)
+- (Tương lai: một số doanh nghiệp FDI có nhân viên **nước ngoài** → để dành đa ngôn ngữ.)
 
 > 🎯 Kim chỉ nam: app phải **đơn giản như ví điện tử** (MoMo/ZaloPay), KHÔNG giống phần mềm doanh nghiệp.
 
