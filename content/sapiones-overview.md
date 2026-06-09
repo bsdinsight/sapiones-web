@@ -38,6 +38,9 @@ Một **nền tảng HR dùng chung cho mọi doanh nghiệp**, đào sâu theo 
 | **Kho tri thức + Trợ lý AI** | Kho tài liệu nội bộ (nội quy, quy trình, chính sách) + **trợ lý AI hỏi‑đáp (RAG)** trên kho đó; nhân viên tra cứu qua cổng. |
 | **Tuyển dụng (ATS)** | Yêu cầu tuyển dụng + duyệt; **pipeline ứng viên** (kanban); chấm điểm phỏng vấn; **tạo nhân viên từ ứng viên trúng tuyển** (prefill hồ sơ VN). |
 
+### 📊 Tầng phân tích — Báo cáo tổng hợp
+Nằm **trên toàn bộ các phân hệ** (là *tầng phân tích*, không phải phân hệ nghiệp vụ riêng): **5 báo cáo tổng hợp** dạng Pivot + biểu đồ — quỹ lương, nhân sự & cơ cấu, chấm công & tăng ca, ATLĐ, tuyển dụng & đánh giá; **kéo‑thả chiều phân tích, xuất Excel**.
+
 ## 5. Mô hình mở & bảng giá
 - **Miễn phí tới 30 nhân viên đang hoạt động** — **đủ mọi tính năng**, **không giới hạn thời gian** (dùng thử bằng dữ liệu thật).
 - Vượt 30 NV → **bản quyền theo số lao động** (band): Professional (vd ≤100), Enterprise (≤500, không giới hạn). Khi vượt, hệ thống **khóa mềm** chức năng tính tiền — **dữ liệu vẫn giữ nguyên**, phần mã nguồn mở chạy không giới hạn.
@@ -47,7 +50,7 @@ Một **nền tảng HR dùng chung cho mọi doanh nghiệp**, đào sâu theo 
 ## 6. Vì sao chọn Sapiones
 1. **Đúng luật Việt Nam** — BHXH, thuế TNCN, tăng ca, kê khai theo quy định mới nhất; cập nhật khi luật đổi.
 2. **Phiên bản chuyên ngành** — Sản xuất (ca kíp, máy chấm công, lương sản phẩm, ATLĐ) đã sâu; sẽ mở rộng Ngân hàng, Bảo hiểm, Bán lẻ…
-3. **All‑in‑one, nối liền** — chấm công → lương → kê khai → cổng NV → đánh giá → đào tạo → tri thức, một hệ thống.
+3. **All‑in‑one, nối liền** — chấm công → lương → kê khai → cổng NV → đánh giá → đào tạo → tri thức → **báo cáo**, một hệ thống.
 4. **On‑premise + mở** — chủ quyền dữ liệu, mã nguồn mở phần lõi, miễn phí tới 30 NV.
 5. **AI sẵn sàng** — trợ lý tri thức RAG, mở rộng khi cần.
 
