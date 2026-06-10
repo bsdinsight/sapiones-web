@@ -105,3 +105,31 @@ Vẽ các màn (mỗi màn có bản MOBILE và DESKTOP + trạng thái rỗng/t
 ```
 (Tùy chọn — pha 3, cho công ty NGOÀI Sapiones) Thêm: trang ĐĂNG TIN (form tạo tin tuyển dụng) + DASHBOARD nhà tuyển dụng (tin đang đăng, lượt xem, lượt ứng tuyển, mua tin nổi bật).
 ```
+
+---
+
+## 12. Nâng cao — Tin cậy & Cá nhân hoá (bổ sung, pha 2–3)
+| # | Chức năng | Mô tả | Pha |
+|---|---|---|---|
+| X1 | **Lương "Thương lượng"** | NTD không công khai số → nhãn "Thương lượng"; bộ lọc có tùy chọn gồm tin thương lượng | 2 |
+| X2 | **Độ phù hợp hồ sơ–tin (%)** | Chip "% phù hợp" cho ứng viên đã đăng nhập (hồ sơ vs yêu cầu); khối "Gợi ý phù hợp" trang chủ | 2–3 |
+| X3 | **Đánh giá công ty** | Sao + nhận xét (ưu/nhược, ẩn danh) trên trang công ty; sao nhỏ trên thẻ job — kiểu Glassdoor nhẹ | 3 |
+| X4 | **Xác thực nhà tuyển dụng** | Badge "Đã xác thực" chống tin ma (BSD/ĐKKD xác minh) | 2 |
+| X5 | **Báo tin xấu** | "Báo cáo tin này" → chọn lý do → gửi (an toàn cộng đồng) | 2 |
+
+### Prompt Claude Design (bổ sung — dán thêm vào project đã có)
+```
+Bổ sung vào thiết kế job board Sapiones (tuyendung.sapiones.com) đã vẽ — thêm 5 yếu tố sau, GIỮ NGUYÊN brand (gradient indigo #4F46E5 → cyan #06B6D4, Inter, mobile-first) và hoà vào layout hiện có (ưu tiên gọn, không làm rối thẻ job):
+
+1) LƯƠNG "THƯƠNG LƯỢNG": trên thẻ job + chi tiết tin, khi NTD không công khai số lương → hiện nhãn "Thương lượng" thay cho con số. Bộ lọc lương thêm tùy chọn "Gồm tin Thương lượng".
+
+2) ĐỘ PHÙ HỢP (match %): với ứng viên ĐÃ ĐĂNG NHẬP + có hồ sơ, hiện chip "% phù hợp" trên thẻ job + chi tiết tin (vd "85% phù hợp"; màu: xanh ≥80, cam 50–79, xám <50). Thêm khối "Gợi ý phù hợp với bạn" trên trang chủ. Dùng chip nhỏ hoặc vòng tròn %, gọn.
+
+3) ĐÁNH GIÁ CÔNG TY (Glassdoor nhẹ): trang công ty có điểm sao tổng (vd ★ 4.2 · 128 đánh giá) + danh sách đánh giá (số sao, Ưu điểm, Nhược điểm, vai trò người đánh giá ẩn danh, ngày) + nút "Viết đánh giá" (form: sao + ưu + nhược + ẩn danh). Thẻ job + chi tiết tin hiện sao công ty (nhỏ).
+
+4) XÁC THỰC NHÀ TUYỂN DỤNG (chống tin ma): badge "Đã xác thực" (dấu tích) cạnh tên công ty trên thẻ job, chi tiết tin và trang công ty — tín hiệu tin cậy. Tin của công ty đã xác thực có thêm nhãn nhẹ "Tin đã xác minh".
+
+5) BÁO TIN XẤU: ở chi tiết tin có link "Báo cáo tin này" → modal chọn lý do (Tin giả/lừa đảo · Sai thông tin · Trùng lặp · Khác) + ô ghi chú → nút Gửi → toast xác nhận "Đã gửi báo cáo".
+
+Mỗi yếu tố vẽ cả bản MOBILE và DESKTOP, khớp với các màn đã có (trang chủ, kết quả tìm việc, chi tiết tin, trang công ty).
+```
