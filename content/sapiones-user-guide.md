@@ -230,7 +230,7 @@ Mở/tạo một **Bảng chấm công** → bấm **Lấy từ Chấm công Odo
 **Tính lương tự đúng quy định** (cờ tự lấy lên phiếu lương):
 - Người nước ngoài **không đóng BHTN** → trừ **9,5%** thay vì 10,5%.
 - **Cá nhân cư trú** (≥183 ngày): thuế TNCN **lũy tiến** + giảm trừ gia cảnh.
-- **Không cư trú** (<183 ngày): thuế **20% cố định**, **không** giảm trừ.
+- **Không cư trú** (dưới 183 ngày): thuế **20% cố định**, **không** giảm trừ.
 
 ---
 
