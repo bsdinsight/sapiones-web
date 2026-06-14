@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Đăng ký miễn phí — Sapiones</title>
+<link rel="canonical" href="https://sapiones.com/dang-ky">
+<link rel="icon" href="assets/logo_icon.png">
+<meta name="robots" content="noindex">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Đăng ký miễn phí — Sapiones">
+<meta property="og:description" content="Tạo workspace quản trị nhân sự trong 2 phút. Miễn phí tới 20 nhân viên — chỉ cần email công ty.">
+<meta name="description" content="Tạo workspace quản trị nhân sự trong 2 phút. Miễn phí tới 20 nhân viên — chỉ cần email công ty.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --indigo:#4F46E5; --indigo-dark:#4338CA; --cyan:#06B6D4; --ink:#0F172A; --slate:#475569;
+    --mute:#94A3B8; --bg:#fff; --soft:#F8FAFC; --line:#E2E8F0; --indigo-soft:#EEF2FF;
+    --grad:linear-gradient(135deg,#4F46E5,#06B6D4); --radius:18px;
+    --shadow:0 10px 30px -12px rgba(15,23,42,.18); --shadow-lg:0 24px 60px -20px rgba(15,23,42,.30);
+    --font-head:"Plus Jakarta Sans","Be Vietnam Pro",system-ui,sans-serif;
+    --font-body:"Be Vietnam Pro",system-ui,sans-serif;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:var(--font-body);color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased}
+  a{color:inherit}
+  .wrap{width:100%;max-width:1140px;margin-inline:auto;padding-inline:clamp(18px,5vw,40px)}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;font-family:var(--font-body);
+       font-weight:600;font-size:1rem;border:0;border-radius:12px;padding:.85rem 1.3rem;cursor:pointer;text-decoration:none;transition:transform .12s,box-shadow .2s,opacity .2s}
+  .btn-primary{background:var(--grad);color:#fff;box-shadow:0 10px 24px -10px rgba(79,70,229,.55)}
+  .btn-primary:hover{transform:translateY(-1px)}
+  .btn-primary:disabled{opacity:.6;cursor:default;transform:none}
+  .btn-lg{padding:1rem 1.5rem;font-size:1.05rem;width:100%}
+
+  /* header */
+  header.h{border-bottom:1px solid var(--line)}
+  .h-in{display:flex;align-items:center;justify-content:space-between;height:64px}
+  .brand{display:inline-flex;align-items:center;gap:.55rem;font-family:var(--font-head);font-weight:800;font-size:1.15rem;text-decoration:none}
+  .brand .mark{width:30px;height:30px;border-radius:9px;background:var(--grad);color:#fff;display:grid;place-items:center;font-weight:800}
+  .h-back{color:var(--slate);font-size:.94rem;text-decoration:none}
+  .h-back:hover{color:var(--indigo)}
+
+  /* layout */
+  .reg{background:radial-gradient(1200px 500px at 80% -10%,var(--indigo-soft),transparent 60%),var(--soft);min-height:calc(100vh - 64px)}
+  .reg-wrap{display:grid;grid-template-columns:1.02fr .98fr;gap:clamp(28px,5vw,72px);align-items:center;padding-block:clamp(34px,6vw,72px)}
+  @media(max-width:900px){.reg-wrap{grid-template-columns:1fr;gap:24px}}
+  .eyebrow{display:inline-flex;align-items:center;gap:.5rem;font-weight:700;font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;color:var(--indigo)}
+  .reg-copy h1{font-family:var(--font-head);font-size:clamp(1.9rem,4vw,2.6rem);line-height:1.12;margin:.6rem 0 .8rem;font-weight:800}
+  .reg-copy h1 .g{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .reg-copy .lead{font-size:1.08rem;color:var(--slate);margin:0}
+  .reg-benefits{list-style:none;margin:1.5rem 0 0;padding:0;display:grid;gap:.85rem}
+  .reg-benefits li{display:flex;gap:.7rem;align-items:flex-start;color:var(--slate);font-size:1.01rem}
+  .reg-benefits .bi{flex:none;width:26px;height:26px;border-radius:8px;background:var(--indigo-soft);color:var(--indigo);display:grid;place-items:center;margin-top:1px}
+  .reg-benefits .bi svg{width:16px;height:16px}
+  .reg-benefits b{color:var(--ink);font-weight:600}
+
+  /* card */
+  .reg-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow-lg);padding:clamp(22px,3vw,34px);position:relative}
+  .reg-steps{display:flex;gap:.5rem;margin-bottom:1.4rem}
+  .reg-steps i{height:4px;flex:1;border-radius:999px;background:var(--line);transition:background .3s}
+  .reg-steps i.on{background:var(--grad)}
+  .reg-card h2{font-family:var(--font-head);font-size:1.4rem;margin:0 0 .3rem;font-weight:800}
+  .reg-card .sub{color:var(--mute);font-size:.96rem;margin:0 0 1.4rem}
+  .reg-field{margin-bottom:1rem}
+  .reg-field label{display:block;font-size:.88rem;font-weight:600;color:var(--slate);margin-bottom:.4rem}
+  .reg-field .req{color:#E11D48}
+  .reg-field .opt{color:var(--mute);font-weight:400}
+  .reg-input,.reg-select{width:100%;font-family:var(--font-body);font-size:1.02rem;color:var(--ink);background:var(--soft);
+       border:1.5px solid var(--line);border-radius:12px;padding:.8rem .95rem;transition:border-color .15s,background .15s;-webkit-appearance:none;appearance:none}
+  .reg-input:focus,.reg-select:focus{outline:none;border-color:var(--indigo);background:#fff}
+  .reg-select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='none' stroke='%2394A3B8' stroke-width='2' stroke-linecap='round'%3E%3Cpath d='M5 8l5 5 5-5'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right .8rem center;padding-right:2.4rem}
+  .reg-hint{font-size:.84rem;color:var(--mute);margin-top:.35rem}
+  .reg-err{font-size:.86rem;color:#E11D48;margin-top:.4rem;display:none}
+  .reg-err.show{display:block}
+  .reg-card .btn{margin-top:.4rem}
+  .reg-back{background:none;border:0;color:var(--mute);font-size:.92rem;cursor:pointer;padding:.6rem;margin-top:.6rem;width:100%}
+  .reg-back:hover{color:var(--indigo)}
+
+  .otp-row{display:flex;gap:.5rem;justify-content:space-between;margin:.2rem 0 .4rem}
+  .otp-box{flex:1;text-align:center;font-family:var(--font-head);font-size:1.5rem;font-weight:700;color:var(--ink);background:var(--soft);border:1.5px solid var(--line);border-radius:12px;padding:.6rem 0;min-width:0}
+  .otp-box:focus{outline:none;border-color:var(--indigo);background:#fff}
+  .otp-resend{text-align:center;font-size:.9rem;color:var(--mute);margin-top:.4rem}
+  .otp-resend button{background:none;border:0;color:var(--indigo);font-weight:600;cursor:pointer}
+  .otp-resend button:disabled{color:var(--mute);cursor:default}
+  .spam-note{background:#FFFBEB;border:1px solid #FDE68A;color:#92400E;font-size:.85rem;border-radius:10px;padding:.6rem .8rem;margin:.2rem 0 1rem}
+
+  .reg-done{text-align:center}
+  .reg-done .dot{width:64px;height:64px;margin:0 auto 1rem;border-radius:50%;background:var(--grad);color:#fff;display:grid;place-items:center;box-shadow:0 14px 30px -12px rgba(79,70,229,.6)}
+  .reg-done .dot svg{width:32px;height:32px}
+  .reg-done h2{font-size:1.5rem}
+  .reg-url{display:flex;align-items:center;gap:.5rem;justify-content:center;background:var(--indigo-soft);color:var(--indigo-dark);font-weight:600;padding:.7rem 1rem;border-radius:12px;margin:1rem 0;word-break:break-all}
+
+  .demo-flag{position:absolute;top:10px;right:14px;font-size:.7rem;font-weight:700;letter-spacing:.04em;color:#92400E;background:#FEF3C7;padding:.2rem .5rem;border-radius:999px}
+  .hidden{display:none!important}
+</style>
+</head>
+<body>
+
+<header class="h"><div class="wrap h-in">
+  <a class="brand" href="/"><span class="mark">S</span>Sapiones</a>
+  <a class="h-back" href="/">← Về trang chủ</a>
+</div></header>
+
+<section class="reg"><div class="wrap reg-wrap">
+  <div class="reg-copy">
+    <span class="eyebrow">Miễn phí tới 20 nhân viên</span>
+    <h1>Tạo workspace <span class="g">quản trị nhân sự</span> của bạn.</h1>
+    <p class="lead">Chỉ cần email — không cần thẻ tín dụng, không cần cài đặt. Đăng ký xong là dùng được ngay với dữ liệu thật của công ty.</p>
+    <ul class="reg-benefits">
+      <li><span class="bi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span><b>Đủ mọi tính năng</b> — chấm công, tính lương đúng luật (BHXH, thuế TNCN), cổng nhân viên.</span></li>
+      <li><span class="bi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span><b>Miễn phí ≤ 20 nhân viên</b> — không giới hạn thời gian.</span></li>
+      <li><span class="bi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span><b>Đúng luật Việt Nam</b> — cập nhật tuân thủ, dữ liệu hành chính mới nhất.</span></li>
+      <li><span class="bi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span><b>Dữ liệu của bạn</b> — workspace riêng, nâng cấp khi cần mà không mất dữ liệu.</span></li>
+    </ul>
+  </div>
+
+  <div class="reg-card">
+    <span class="demo-flag hidden" id="demoFlag">DEMO</span>
+    <div class="reg-steps"><i class="on" id="bar1"></i><i id="bar2"></i><i id="bar3"></i></div>
+
+    <!-- STEP 1 -->
+    <form id="step1" novalidate>
+      <h2>Bắt đầu miễn phí</h2>
+      <p class="sub">Điền vài thông tin — hệ thống lo phần còn lại.</p>
+      <div class="reg-field">
+        <label for="f-email">Email công ty <span class="req">*</span></label>
+        <input class="reg-input" id="f-email" type="email" autocomplete="email" inputmode="email" placeholder="ban@congty.com">
+        <div class="reg-hint">Dùng để đăng nhập + nhận mã xác nhận.</div>
+      </div>
+      <div class="reg-field">
+        <label for="f-name">Họ và tên <span class="req">*</span></label>
+        <input class="reg-input" id="f-name" type="text" autocomplete="name" placeholder="Nguyễn Văn A">
+      </div>
+      <div class="reg-field">
+        <label for="f-company">Tên công ty <span class="req">*</span></label>
+        <input class="reg-input" id="f-company" type="text" autocomplete="organization" placeholder="Công ty TNHH ABC">
+      </div>
+      <div class="reg-field">
+        <label for="f-province">Tỉnh / Thành phố <span class="opt">(không bắt buộc)</span></label>
+        <select class="reg-select" id="f-province">
+          <option value="" selected>— Chọn tỉnh / thành phố —</option>
+          <option>Hà Nội</option><option>Cao Bằng</option><option>Tuyên Quang</option>
+          <option>Lào Cai</option><option>Điện Biên</option><option>Lai Châu</option>
+          <option>Sơn La</option><option>Thái Nguyên</option><option>Lạng Sơn</option>
+          <option>Quảng Ninh</option><option>Phú Thọ</option><option>Bắc Ninh</option>
+          <option>Hải Phòng</option><option>Hưng Yên</option><option>Ninh Bình</option>
+          <option>Thanh Hóa</option><option>Nghệ An</option><option>Hà Tĩnh</option>
+          <option>Quảng Trị</option><option>Huế</option><option>Đà Nẵng</option>
+          <option>Quảng Ngãi</option><option>Khánh Hòa</option><option>Gia Lai</option>
+          <option>Đắk Lắk</option><option>Lâm Đồng</option><option>Tây Ninh</option>
+          <option>Đồng Nai</option><option>TP. Hồ Chí Minh</option><option>Vĩnh Long</option>
+          <option>Đồng Tháp</option><option>An Giang</option><option>Cần Thơ</option>
+          <option>Cà Mau</option>
+        </select>
+      </div>
+      <div class="reg-field">
+        <label for="f-phone">Số điện thoại <span class="opt">(không bắt buộc)</span></label>
+        <input class="reg-input" id="f-phone" type="tel" inputmode="numeric" autocomplete="tel" placeholder="0912 345 678">
+      </div>
+      <div class="reg-err" id="err1"></div>
+      <button class="btn btn-primary btn-lg" type="submit" id="btn1">Gửi mã xác nhận</button>
+      <p class="reg-hint" style="text-align:center;margin-top:.8rem">Đã có workspace? <a href="https://demo.sapiones.com" style="color:var(--indigo);font-weight:600">Đăng nhập</a></p>
+    </form>
+
+    <!-- STEP 2 -->
+    <form id="step2" class="hidden" novalidate>
+      <h2>Nhập mã xác nhận</h2>
+      <p class="sub">Mã gồm 6 số vừa gửi tới email <b id="otpEmail">email của bạn</b>.</p>
+      <div class="spam-note">📩 Email mã xác nhận có thể nằm trong <b>Spam/Junk</b> (do tên miền mới). Kiểm tra cả thư mục đó nhé.</div>
+      <div class="otp-row" id="otpRow">
+        <input class="otp-box" inputmode="numeric" maxlength="1" aria-label="Số 1">
+        <input class="otp-box" inputmode="numeric" maxlength="1" aria-label="Số 2">
+        <input class="otp-box" inputmode="numeric" maxlength="1" aria-label="Số 3">
+        <input class="otp-box" inputmode="numeric" maxlength="1" aria-label="Số 4">
+        <input class="otp-box" inputmode="numeric" maxlength="1" aria-label="Số 5">
+        <input class="otp-box" inputmode="numeric" maxlength="1" aria-label="Số 6">
+      </div>
+      <div class="otp-resend">Không nhận được mã? <button type="button" id="resendBtn" disabled>Gửi lại sau <span id="resendT">45</span>s</button></div>
+      <div class="reg-field" style="margin-top:1.3rem">
+        <label for="f-password">Đặt mật khẩu <span class="req">*</span></label>
+        <input class="reg-input" id="f-password" type="password" autocomplete="new-password" placeholder="Tối thiểu 6 ký tự" minlength="6">
+        <div class="reg-hint">Dùng để đăng nhập những lần sau.</div>
+      </div>
+      <div class="reg-err" id="err2"></div>
+      <button class="btn btn-primary btn-lg" type="submit" id="btn2">Tạo workspace</button>
+      <button class="reg-back" type="button" id="back2">← Sửa thông tin</button>
+    </form>
+
+    <!-- STEP 3 -->
+    <div id="step3" class="hidden reg-done">
+      <div class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div>
+      <h2>Workspace đã sẵn sàng! 🎉</h2>
+      <p class="sub">Không gian riêng của công ty bạn đã được tạo. Đăng nhập bằng email + mật khẩu vừa đặt.</p>
+      <a class="reg-url" id="tenantUrl" href="#" target="_blank" rel="noopener">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1 1M14 11a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1-1"/></svg>
+        <span id="tenantUrlText">đang tạo…</span>
+      </a>
+      <a class="btn btn-primary btn-lg" id="openTenant" href="#" target="_blank" rel="noopener" style="margin-top:.4rem">Mở workspace của tôi →</a>
+    </div>
+  </div>
+</div></section>
+
+<script src="assets/register.js"></script>
+</body>
+</html>
