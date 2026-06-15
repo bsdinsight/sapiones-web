@@ -115,14 +115,18 @@
     state.password = password;
 
     var btn = $('btn2'); btn.disabled = true; var t = btn.textContent;
-    btn.textContent = 'Đang tạo workspace… (~20 giây)';
+    // verify BLOCK ~30–60s (clone DB + tạo DNS) → báo tiến trình theo bậc để không "treo im"
+    var stages = ['Đang tạo workspace… (~30–60 giây)', 'Đang dựng cơ sở dữ liệu riêng…', 'Đang cấu hình tên miền & tài khoản…', 'Sắp xong, vui lòng đừng đóng trang…'];
+    var si = 0; btn.textContent = stages[0];
+    var stageTimer = setInterval(function () { si = Math.min(si + 1, stages.length - 1); btn.textContent = stages[si]; }, 15000);
+    function doneLoading() { clearInterval(stageTimer); btn.disabled = false; btn.textContent = t; }
     post('/register/verify', { request_id: state.request_id, code: code, password: password })
       .then(function (j) {
-        btn.disabled = false; btn.textContent = t;
+        doneLoading();
         if (!j.ok) return showErr($('err2'), msgOf(j));
         renderSuccess(j);
       })
-      .catch(function () { btn.disabled = false; btn.textContent = t; showErr($('err2'), ERR._default); });
+      .catch(function () { doneLoading(); showErr($('err2'), ERR._default); });
   });
 
   $('back2').addEventListener('click', function () { showStep(1); $('f-email').focus(); });
