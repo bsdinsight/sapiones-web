@@ -156,6 +156,14 @@
     $('tenantUrl').href = url;
     $('openTenant').href = url;
     showStep(3);
-    setTimeout(function () { window.location.href = url; }, 6000); // tự mở workspace sau ít giây
+    // dns_ok=false → KHÔNG auto-redirect (DNS chưa lan truyền); luôn có URL + nút "Mở workspace" thủ công.
+    // Email chào mừng cũng chứa URL → lưới an toàn nếu redirect lỗi / đóng tab.
+    var note = $('dnsNote');
+    if (j.dns_ok === false) {
+      if (note) { note.innerHTML = '⏳ Tên miền đang được tạo, vui lòng chờ 1–2 phút rồi bấm “Mở workspace”. Link cũng đã được gửi vào email của bạn.'; note.classList.remove('hidden'); }
+    } else {
+      if (note) { note.innerHTML = 'Nếu trang không tự mở, bấm “Mở workspace”. Link cũng đã được gửi vào email của bạn.'; note.classList.remove('hidden'); }
+      setTimeout(function () { window.location.href = url; }, 9000); // chừa thời gian CF cấp SSL cho hostname mới
+    }
   }
 })();
